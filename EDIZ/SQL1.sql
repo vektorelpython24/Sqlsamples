@@ -5,3 +5,4 @@
 SELECT * FROM artists;
 -- Birden fazla sorgu çalıştırabiliriz. Sorguları birbirinden ayırabilmek ; kullanılır
 SELECT ArtistId FROM artists;
+
