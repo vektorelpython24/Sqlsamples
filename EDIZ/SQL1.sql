@@ -2,6 +2,6 @@
 -- SELECT Sorgusu
 -- SQL Casesensitive değildir
 -- SELECT Sutun Adları FROM Tablo Adı
--- SELECT * FROM artists;
+SELECT * FROM artists;
 -- Birden fazla sorgu çalıştırabiliriz. Sorguları birbirinden ayırabilmek ; kullanılır
-SELECT ArtistId,Name FROM artists;
+SELECT ArtistId FROM artists;
