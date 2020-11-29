@@ -1,0 +1,1 @@
+SELECT AlbumId,Title FROM albums;
