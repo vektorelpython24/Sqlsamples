@@ -11,8 +11,9 @@ if sanatci:
 cur.execute(sorgu)
 print(*cur.fetchall())
 
-
-#print(cur.fetchmany())
-#print(cur.fetchone())
-#print(cur.fetchall())
+# print(cur.fetchmany())
+# print(cur.fetchone())
+# print(cur.fetchone())
+# print(cur.fetchone())
+# print(cur.fetchall())
 
