@@ -2,20 +2,16 @@ import sqlite3 as sql
 try:
     db = sql.connect(r"chinook\chinook.db") 
     cur = db.cursor() 
-    eposta = input("E Posta Adresinizi Giriniz:")
-    Cid = int(input("Müşteri Numaranızı Giriniz:"))
+    kayitIdS = input("Silmek istediğiniz kayıt(lar)a ait id leri ',' koyarak yazınız:")
     sorgu = f"""
-        UPDATE customers
-        SET Email = '{eposta}'
-        WHERE CustomerId = {Cid};
+        DELETE FROM customers
+      WHERE CustomerId IN ({kayitIdS});
     """
     cur.execute(sorgu)
     db.commit()
     print("İşlem Başarılı")
-    sorgu = f""" SELECT * FROM CUSTOMERS WHERE CustomerId = {Cid} """
-    print(cur.execute(sorgu).fetchall()[0])
-except Exception as hata:
     db.rollback()
+except Exception as hata:
     print("Hata Mesajı :",hata)
 finally:
     cur.close()
