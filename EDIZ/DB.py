@@ -10,8 +10,3 @@ if sanatci:
     sorgu += fr" WHERE artistId IN (SELECT artistId FROM artists WHERE NAme LIKE '{sanatci}')"
 cur.execute(sorgu)
 print(*cur.fetchall())
-# print(cur.fetchmany())
-# print(cur.fetchone())
-# print(cur.fetchone())
-# print(cur.fetchone())
-# print(cur.fetchall())
