@@ -21,3 +21,4 @@ finally:
     cur.close()
     db.close() 
     
+# Commit işlemi verilerde  DML için yani (INSERT,DELETE,UPDATE) için kullanılır. 
