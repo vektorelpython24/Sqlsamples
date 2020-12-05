@@ -10,6 +10,7 @@ try:
         WHERE CustomerId = {Cid};
     """
     cur.execute(sorgu)
+    db.commit()
     print("İşlem Başarılı")
     sorgu = f""" SELECT * FROM CUSTOMERS WHERE CustomerId = {Cid} """
     print(cur.execute(sorgu).fetchall()[0])
